@@ -2,15 +2,19 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+}
+.container.grey {
+  background-color: #f9f9f9;
 }
 
-/* BLOCCO LEZIONI */
-/* #lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
-} */
+img {
+  height: 200px;
+}
+.first img,
+.second img,
+.third img{
+  margin: 10px;
+}
 
 #lezioni .row img {
   /* per centrare orizzontalmente */
@@ -35,18 +39,41 @@
   text-align: center;
 }
 
-
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px
 }
 
-
-.container.grey {
-  background-color: #f9f9f9;
+.col_xs_12 h3,
+.col_md_12 h3,
+.col_lg_12 h3{
+  padding: 5px 0px;
 }
-
-img {
-  height: 200px;
+.row h1 {
+  padding: 10px 0px;
+}
+/* Media Query */
+@media screen and (min-width:992px){
+  .bgc_green{
+    background-color: lightgreen;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 991px){
+  .bgc_red{
+    background-color: lightcoral;
+  }
+  hr{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px){
+  .bgc_blue{
+    background-color: lightskyblue;
+  }
+  hr{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
